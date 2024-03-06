@@ -1,0 +1,483 @@
+/* padrão(celular) */
+body{
+
+        background-color:rgb(243, 243, 243) ;
+    }
+    #cont{
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+        height: auto;
+        min-height: 20vh;
+
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-between;
+    }
+    .box{
+        background-color:rgb(243, 243, 243);
+        width: 100%;
+        height: auto;
+        min-width: 15vh;
+        text-align: center;
+    
+        margin: .2rem 0;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+    
+        background-color: rgb(243, 243, 243);
+        padding: 5;
+    }
+    .item{
+        list-style: none;
+    }
+    .esconder{
+        display: none;
+    }
+    #menu{
+        list-style: none;
+        cursor: pointer;
+    }
+    #Home,
+    #Sobre,
+    #Acessibilidade,
+    #Contato{
+        flex: 1 1 25%;
+    }
+    #cabeçalho{
+    width: 1500px;
+    height:130px;
+    position: relative;
+    left: 180px;
+    background-image: url("../img/banner-celular.png;")
+    }
+    #navegação{
+     width: 100px;
+     height: 500px;
+     bottom:280px;
+     left: 25px;
+     position: relative; 
+     text-align: center;
+     color: black;
+     text-transform: none;
+    }
+    
+    #imagem{
+        background-color:white;
+        width:1500px;
+        height: 130px;
+        top: 80px;
+        left: 180px;
+        position: relative;
+        background-image: url("../img/1009.png");
+    
+    }
+    
+    #primeiro {
+        background-color:rgb(243, 243, 243);
+        width: 90%;
+        height: 514px;
+        margin: 110px;
+        margin-left: 330px;
+        position: absolute;
+        top: 250px;
+        color: black;
+    }
+    #institucional {
+    margin-left: 70px;
+    color: black;
+    position: relative;
+    top: 1000px;
+    }
+    
+    #Dúvidas {
+     margin-left: 430px; 
+    top: 865px; 
+    position: relative;
+    color: black;
+    }
+    
+    #Ajuda{
+    margin-left: 790px;
+    top:710px;
+    position: relative;
+    color: black;
+    }
+    #Acessibilidade{
+      margin-left: 1150px;
+      top: 580px;
+      position:relative;
+    color: black;
+    }
+    #Departamentos{
+        margin-left: 1500px;
+        top:500px;
+        position: relative;
+        color: black;
+    }
+    #principal{
+        border: 1px solid white;
+        box-shadow: 20px 30px  50px rgb(100, 100, 100);
+        position: relative;
+        right: 150px;
+    }
+    #principal:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    
+    }
+    #secundaria{
+        position:absolute;
+        right: 200px ;
+        bottom: 500px;
+        border: 1px solid white;
+        box-shadow: 20px 30px  50px rgb(100, 100, 100);
+    }
+    
+    #secundaria:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    #terciaria{
+        position: relative;
+        left:135px;
+        border: 1px solid white;
+        box-shadow: 20px 30px  50px rgb(100, 100, 100);
+    }
+    
+    
+    #terciaria:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .miniatura{
+        width: 200px;
+        right: 20px;
+        border: 1px solid white;
+        position: relative;
+        top: 20px;
+        border: 3px solid white;
+        box-shadow: 20px 30px  50px rgb(100, 100, 100);
+    }
+    .miniatura:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+    }
+    .mminiatura{
+        width: 200px;
+        margin-top: 150px;
+        right: 20px;
+        border: 1px solid white;
+        position: relative;
+        border: 3px solid white;
+        box-shadow: 20px 30px  50px rgb(100, 100, 100);
+    }
+    .mminiatura:hover{
+        transform: scale(1.1);
+    cursor: pointer;
+    }
+
+    /* Tablet */
+    @media only screen and (min-width: 1024px){
+      body{
+        background-color: rgb(243, 243, 243);
+      }
+      #nav{
+        margin-top: 200px;
+        flex-direction: column;
+        padding:0;
+      }
+      #Home,#Sobre,#Serviço,#Contato{
+        flex-direction: column;
+      }
+      menu{
+        display: none;
+      }
+      .esconder{
+        display: list-item;
+      }
+      #cabeçalho{
+        width: 900px;;
+        height:200px;
+        background-image: url("../img/banner-tt.png");
+        }
+                
+    #navegação{
+        width: 100px;
+        height: 500px;
+        bottom:280px;
+        left: 25px;
+        position: relative; 
+        text-align: center;
+        color: black;
+        text-transform: none;
+        }
+        #imagem{
+            background-color:white;
+            width:1400px;
+            height: 140px;
+            top: 300px;
+            left: -330px;
+            position: absolute;
+            background-image: url("../img/1009.png");
+        
+        }
+        
+        #primeiro {
+            background-color:rgb(243, 243, 243);
+            width: 90%;
+            height: 514px;
+            margin: 110px;
+            margin-left: 330px;
+            position: absolute;
+            top: 250px;
+            color: black;
+        }
+        #contorno{
+         width: 80%;
+         height: auto;
+         background-color:rgb(243, 243, 243);
+         margin-left: 200px;
+         margin-top: 100px;
+        }
+       .cadeiras{
+        border: 1px solid white;
+        box-shadow: 20px 30px  50px rgb(100, 100, 100);
+        bottom: 180px;
+        width: 25%;
+        margin: 20px;
+
+       }
+        .cadeiras:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        
+        }
+        .miniatura{
+            width: 200px;
+            right: 250px;
+            border: 1px solid white;
+            position: relative;
+            top: 100px;
+            border: 3px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+        }
+        .miniatura:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        
+        }
+        .mminiatura{
+            width: 200px;
+            margin-top: 150px;
+            right: 250px;
+            border: 1px solid white;
+            position: relative;
+            top: 100px;
+            border: 3px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+        }
+        .mminiatura:hover{
+            transform: scale(1.1);
+        cursor: pointer;
+        }
+
+        #institucional {
+            margin-left: 70px;
+            color: black;
+            position: relative;
+            top: 1200px;
+            }
+            
+            #Dúvidas {
+             margin-left: 430px; 
+            top: 1065px; 
+            position: relative;
+            color: black;
+            }
+            
+            #Ajuda{
+            margin-left: 790px;
+            top:910px;
+            position: relative;
+            color: black;
+            }
+            #Acessibilidade{
+              margin-left: 1150px;
+              top: 780px;
+              position:relative;
+            color: black;
+            }
+
+
+    }
+    /* computadores */
+    @media only screen and (min-width: 1440px){
+    body{
+            background-color: rgb(243, 243, 243);
+        }
+    }
+    .box{
+        background-color: white;
+        width: 100px;
+        height: auto;
+        min-width: 15vh;
+        text-align: center;
+    
+        margin: .2rem 0;
+    }
+    #nav{ 
+        display: flex;
+        flex-direction: column;
+    
+        background-color: rgb(243, 243, 243);
+        padding: 2;
+
+        position: relative;
+        bottom: 150px;
+        right: 10px;
+    }
+    #menu{
+        list-style: none;
+    }
+    #cabeçalho{
+        width: 1400px;;
+        height:140px;
+        position: relative;
+        left:0px;
+        background-image: url("../img/banner.png");
+            }
+                
+    #navegação{
+        width: 100px;
+        height: 500px;
+        bottom:280px;
+        left: 25px;
+        position: relative; 
+        text-align: center;
+        color: black;
+        text-transform: none;
+        }
+        #imagem{
+            background-color:white;
+            width:1400px;
+            height: 140px;
+            top: 300px;
+            left: -330px;
+            position: absolute;
+            background-image: url("../img/1009.png");
+        
+        }
+        
+        #primeiro {
+            background-color:rgb(243, 243, 243);
+            width: 90%;
+            height: 514px;
+            margin: 110px;
+            margin-left: 330px;
+            position: absolute;
+            top: 250px;
+            color: black;
+        }
+        #principal{
+            border: 1px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+            position: relative;
+            right: 330px;
+            bottom: 190px;
+        }
+        #principal:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        
+        }
+        #secundaria{
+            position: relative;
+            right: 240px ;
+            border: 1px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+            bottom: 190px;
+        }
+        
+        #secundaria:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        #terciaria{
+            position: relative;
+            left:-145px;
+            border: 1px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+            bottom: 190px;
+        }
+        
+        
+        #terciaria:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        
+        .miniatura{
+            width: 200px;
+            right: 250px;
+            border: 1px solid white;
+            position: relative;
+            top: 100px;
+            border: 3px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+        }
+        .miniatura:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        
+        }
+        .mminiatura{
+            width: 200px;
+            margin-top: 150px;
+            right: 250px;
+            border: 1px solid white;
+            position: relative;
+            top: 100px;
+            border: 3px solid white;
+            box-shadow: 20px 30px  50px rgb(100, 100, 100);
+        }
+        .mminiatura:hover{
+            transform: scale(1.1);
+        cursor: pointer;
+        }
+
+        #institucional {
+            margin-left: 70px;
+            color: black;
+            position: relative;
+            top: 1200px;
+            }
+            
+            #Dúvidas {
+             margin-left: 430px; 
+            top: 1065px; 
+            position: relative;
+            color: black;
+            }
+            
+            #Ajuda{
+            margin-left: 790px;
+            top:910px;
+            position: relative;
+            color: black;
+            }
+            #Acessibilidade{
+              margin-left: 1150px;
+              top: 780px;
+              position:relative;
+            color: black;
+            }
+
+
+
+          
+
+        
